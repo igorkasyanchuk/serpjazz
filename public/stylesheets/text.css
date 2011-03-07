@@ -1,0 +1,312 @@
+/* line 4, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+body {
+  font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+/* line 6, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+a:focus {
+  outline: 1px dotted invert;
+}
+
+/* line 8, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+hr {
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+}
+
+/* line 14, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h1 {
+  font-size: 25px;
+}
+
+/* line 16, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h2 {
+  font-size: 23px;
+}
+
+/* line 18, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h3 {
+  font-size: 21px;
+}
+
+/* line 20, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h4 {
+  font-size: 19px;
+}
+
+/* line 22, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h5 {
+  font-size: 17px;
+}
+
+/* line 24, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h6 {
+  font-size: 15px;
+}
+
+/* line 26, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+ol {
+  list-style: decimal;
+}
+
+/* line 28, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+ul {
+  list-style: square;
+}
+
+/* line 30, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+li {
+  margin-left: 30px;
+}
+
+/* line 32, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 20px;
+}
+
+/* line 16, ../../app/stylesheets/text.sass */
+.text_right {
+  text-align: right;
+}
+
+/* line 19, ../../app/stylesheets/text.sass */
+.text_left {
+  text-align: left;
+}
+
+/* line 22, ../../app/stylesheets/text.sass */
+.text_center {
+  text-align: center;
+}
+
+/* line 25, ../../app/stylesheets/text.sass */
+.center_text {
+  text-align: center;
+}
+
+/* line 28, ../../app/stylesheets/text.sass */
+span.noticed_text {
+  font-size: 13px;
+}
+
+/* line 31, ../../app/stylesheets/text.sass */
+.red_text {
+  color: red;
+}
+/* line 33, ../../app/stylesheets/text.sass */
+.red_text:hover, .red_text:visited {
+  color: red;
+}
+
+/* line 36, ../../app/stylesheets/text.sass */
+.notice_color {
+  color: #8fbe00;
+}
+/* line 38, ../../app/stylesheets/text.sass */
+.notice_color:hover, .notice_color:visited {
+  color: #8fbe00;
+}
+
+/* line 41, ../../app/stylesheets/text.sass */
+.green_text {
+  color: green;
+}
+/* line 43, ../../app/stylesheets/text.sass */
+.green_text:hover, .green_text:visited {
+  color: green;
+}
+
+/* line 46, ../../app/stylesheets/text.sass */
+.yellow_text {
+  color: yellow;
+}
+/* line 48, ../../app/stylesheets/text.sass */
+.yellow_text:hover, .yellow_text:visited {
+  color: yellow;
+}
+
+/* line 51, ../../app/stylesheets/text.sass */
+.blue_text {
+  color: blue;
+}
+/* line 53, ../../app/stylesheets/text.sass */
+.blue_text:hover, .blue_text:visited {
+  color: blue;
+}
+
+/* line 56, ../../app/stylesheets/text.sass */
+.brown_text {
+  color: brown;
+}
+/* line 58, ../../app/stylesheets/text.sass */
+.brown_text:hover {
+  color: brown;
+}
+
+/* line 61, ../../app/stylesheets/text.sass */
+.white_text {
+  color: white;
+}
+/* line 63, ../../app/stylesheets/text.sass */
+.white_text:hover {
+  color: white;
+}
+
+/* line 68, ../../app/stylesheets/text.sass */
+html dl dt {
+  font-weight: bold;
+}
+/* line 70, ../../app/stylesheets/text.sass */
+html dl dt, html dl dl {
+  padding: 0.3em 0;
+}
+
+/* line 79, ../../app/stylesheets/text.sass */
+.remove_user_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/user--minus.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 82, ../../app/stylesheets/text.sass */
+.share_user_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/user-share.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 85, ../../app/stylesheets/text.sass */
+.add_company_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/building--plus.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 88, ../../app/stylesheets/text.sass */
+.cancel_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/navigation-180-frame.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 91, ../../app/stylesheets/text.sass */
+.edit_company_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/building--pencil.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 94, ../../app/stylesheets/text.sass */
+.show_company_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/building--arrow.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 97, ../../app/stylesheets/text.sass */
+.stat_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/building--arrow.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 100, ../../app/stylesheets/text.sass */
+.delete_company_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/building--minus.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 103, ../../app/stylesheets/text.sass */
+.delete_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/minus-circle-frame.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 106, ../../app/stylesheets/text.sass */
+.edit_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/notebook--pencil.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 109, ../../app/stylesheets/text.sass */
+.show_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/notebook--arrow.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 112, ../../app/stylesheets/text.sass */
+.add_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/plus-circle-frame.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 115, ../../app/stylesheets/text.sass */
+.remove_item_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/fileclose.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 118, ../../app/stylesheets/text.sass */
+.public_view {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/blue-document--arrow.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 121, ../../app/stylesheets/text.sass */
+.index_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/blue-document-list.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 124, ../../app/stylesheets/text.sass */
+.approve_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/tick-circle.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 127, ../../app/stylesheets/text.sass */
+.bold_text {
+  font-weight: bold;
+}

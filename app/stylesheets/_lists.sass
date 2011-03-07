@@ -1,0 +1,42 @@
+=normal_tables
+  &.summary
+    border: 0 none
+  &.summary:hover
+    background: none
+
+.admin_rests
+  padding-bottom: 16px
+  .admin_rest
+    font-size: $base_font_size
+    margin-bottom: 6px
+    border-bottom: 1px solid #ececec
+    border-top: 1px solid #ececec
+    padding: 2px
+    +normal_tables
+    &:hover
+      background: #ececec
+    .date
+      float: left
+      width: 15%
+    .location
+      float: left
+      width: 15%
+    .message
+      float: left
+      width: 50%
+    .controls
+      float: left
+      width: 30%
+    .controls.w20
+      float: left
+      width: 20%
+    .photo
+      float: left
+      width: 10%
+    .name
+      float: left
+      width: 20%
+    .amount_total
+      margin-left: 90%
+  .even
+    background: #eee

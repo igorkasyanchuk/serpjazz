@@ -1,0 +1,128 @@
+@import "960/text"
+@import "utils"
+@import "colors"
+
++text
+
+=text-left
+  text-align: left
+
+=text-center
+  text-align: center
+
+=text-right
+  text-align: right
+
+.text_right
+  +text-right
+
+.text_left
+  +text-left
+
+.text_center
+  +text-center
+  
+.center_text  
+  +text-center
+  
+span.noticed_text
+  font-size: $base_font_size
+
+.red_text
+  color: red
+  &:hover, &:visited
+    color: red
+
+.notice_color
+  color: $dark_color
+  &:hover, &:visited
+    color: $dark_color
+
+.green_text
+  color: green
+  &:hover, &:visited
+    color: green
+
+.yellow_text
+  color: yellow
+  &:hover, &:visited
+    color: yellow
+
+.blue_text
+  color: blue
+  &:hover, &:visited
+    color: blue
+
+.brown_text
+  color: brown
+  &:hover
+    color: brown
+
+.white_text
+  color: white
+  &:hover
+    color: white
+
+html
+  dl
+    dt
+      font-weight: bold
+    dt, dl
+      padding: 0.3em 0
+
+=small_image_button($name)
+  padding-left: unquote("18px")
+  padding-left: unquote("18px !important")
+  background: url(/images/fugue/#{$name}) no-repeat center left
+  font-size: $base_font_size
+
+.remove_user_button
+  +small_image_button(unquote("user--minus.png"))
+  
+.share_user_button
+  +small_image_button(unquote("user-share.png"))  
+  
+.add_company_button
+  +small_image_button(unquote("building--plus.png"))  
+  
+.cancel_button
+  +small_image_button(unquote("navigation-180-frame.png"))
+  
+.edit_company_button
+  +small_image_button(unquote("building--pencil.png"))
+  
+.show_company_button
+  +small_image_button(unquote("building--arrow.png"))
+  
+.stat_button  
+  +small_image_button(unquote("building--arrow.png"))
+  
+.delete_company_button
+  +small_image_button(unquote("building--minus.png"))
+  
+.delete_button
+  +small_image_button(unquote("minus-circle-frame.png"))  
+  
+.edit_button
+  +small_image_button(unquote("notebook--pencil.png"))  
+  
+.show_button
+  +small_image_button(unquote("notebook--arrow.png"))
+  
+.add_button
+  +small_image_button(unquote("plus-circle-frame.png"))
+  
+.remove_item_button
+  +small_image_button(unquote("fileclose.png"))     
+  
+.public_view  
+  +small_image_button(unquote("blue-document--arrow.png"))
+  
+.index_button
+  +small_image_button(unquote("blue-document-list.png"))
+
+.approve_button
+  +small_image_button(unquote("tick-circle.png"))
+
+.bold_text
+  font-weight: bold

@@ -1,0 +1,48 @@
+$border_for_notice: unquote("1px solid #ccc")
+
+$width: 100%
+$margin: 0%
+$max_width: 100%
+$content_width: 960px
+
+$map_border_color: #5f6972
+$base_font_size: 13px
+$base_font: Arial
+$menu_font: Helvetica, Arial
+$content_paddign_left: 0
+
+=bordered($color: red)
+  border: unquote("1px solid #{$color}")
+  
+=alpha-omega
+  +alpha
+  +omega
+  
+=round_me($r)
+  -moz-border-radius: $r
+  -webkit-border-radius: $r
+  border-radius: $r
+  
+=image_button($w,$h,$image)
+  color: red
+  width: #{$w}px
+  height: #{$h}px
+  display: inline-block
+  text-indent: -9999px
+  background: url("/images/#{$image}") 0px 0px no-repeat
+  color: transparent
+  border-style: none
+  border-width: 0
+  line-height: 0px !important
+  font-size: 0px
+  overflow: hidden
+  vertical-align: middle
+  *padding-left: 1000px
+  &.active
+    background-position: 0px -#{$h}px
+  &.inactive
+    background-position: 0px #{$h}px
+  &:hover
+    background-position: 0px -#{$h}px
+  &.disable:hover
+    background-position: 0px #{$h}px 

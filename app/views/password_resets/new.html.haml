@@ -1,0 +1,17 @@
+= title "Forgot Password | #{SEO_TITLE_SHORT}"
+= description "Forgot Password #{SEO_TITLE_SHORT}"
+
+= no_index_me
+
+.w640px.center_block.top6px.mb24px
+  .block_header
+    %h1 Forgot Password
+
+  .block
+    .block_content
+      %br
+      %p Fill out the form below and instructions to reset your password will be emailed to you.
+      - simple_form_for @user, :url => password_resets_path do |f|
+        = f.input :email
+        = f.submit 'Reset my password'
+      %br

@@ -1,0 +1,114 @@
+.simple_form
+  padding: 18px 12px
+  float: left
+  width: 100%
+  
+  div
+    width: 100%
+    float: left
+      
+  #map_canvas
+    float: auto
+    width: 600px
+    height: 400px
+    margin-left: 262px
+    margin-bottom: 20px
+    div
+      float: auto
+      width: auto
+      text-align: auto
+    label, input
+      float: auto
+      width: auto
+      text-align: auto
+
+  label 
+    float: left
+    font-size: $base_font_size
+    height: $base_font_size + 4px
+    line-height: $base_font_size + 4px
+    min-height: $base_font_size + 4px
+    padding: 0px 0px 0px 45px
+    width: 215px
+    color: $form_label_color
+    
+  div.password, div.string
+    input
+      //background: transparent url(/images/ibg.gif) repeat-x 0px 0px
+      float: left
+      font-size: $base_font_size
+      padding: 4px 6px
+      width: 320px
+      border: 1px solid $border_color
+    input.date_picker
+      width: 200px  
+
+  div.text
+    textarea
+      //background: transparent url(/images/ibg.gif) repeat-x 0px 0px
+      font-size: $base_font_size
+      padding: 4px 6px
+      border: 1px solid $border_color
+      font-family: "Georgia, Sans Serif"
+  
+  div.select select
+    float: left
+    font-size: $base_font_size
+    
+  div.field_with_errors
+    label.required
+
+  div.text
+    textarea
+      width: 600px
+
+  div.input
+    margin-bottom: 10px
+    
+  div.input.check_boxes
+    label.check_boxes
+      float: left
+      width: 99%
+      font-weight: normal
+      padding-left: 0
+      color: #333
+      height: $base_font_size + 2px
+      min-height: $base_font_size + 2px
+      line-height: $base_font_size + 2px
+      font-size: $base_font_size - 3px
+    label.collection_check_boxes
+      width: 40%
+    
+  div.boolean 
+    label, input
+      vertical-align: middle
+  
+  div.boolean label, label.collection_radio 
+    margin: 0
+    display: inline
+
+  label.collection_radio 
+    margin-right: 10px
+    margin-left: 2px
+
+  .error 
+    font-size: $base_font_size - 2px
+    color: #D00
+    display: block
+    padding-top: 6px
+  
+  .hint
+    font-size: $base_font_size - 2px
+    color: #555
+    display: block
+    font-style: italic
+    padding-top: 6px
+    
+  .buttons
+    padding-left: 260px
+    
+  abbr
+    color: red
+    text-decoration: none
+    border-bottom: 0 none
+    

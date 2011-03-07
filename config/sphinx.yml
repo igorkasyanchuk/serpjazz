@@ -1,0 +1,16 @@
+development:
+  morphology: stem_en
+  enable_star: true
+  max_matches: 1000
+  min_infix_len: 2
+test:
+  morphology: stem_en
+  enable_star: true
+  max_matches: 1000
+  min_infix_len: 2
+production:
+  morphology: stem_en
+  enable_star: true
+  max_matches: 1000
+  min_infix_len: 2
+

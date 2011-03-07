@@ -1,0 +1,15 @@
+= make_page_flyid
+= disable_social
+
+= inside_layout 'application' do
+  = content_for :on_ready do
+    == $('#general_nav .#{controller_name}_menu').addClass('selected');
+    init_hidden_content();
+  #admin
+    .text_block.admin_block
+      %ul#general_nav
+        = render :partial => '/admin/shared/header'
+        = yield :admin_menu
+        .clear
+      .clear
+    .text_block= yield

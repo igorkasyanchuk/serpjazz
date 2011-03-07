@@ -1,0 +1,8 @@
+= f.input :name
+= f.input :email
+= f.input :message, :input_html => { :rows => 6, :cols => 40, :style => 'width: 500px;' }, :as => :text
+
+.buttons
+  = show_simple_captcha :image_style => "simply_grey", :code_type => 'numeric'
+  %br
+  = f.button :submit, "Send", :disable_with => "Sending...", :style => "margin-top: 12px;"

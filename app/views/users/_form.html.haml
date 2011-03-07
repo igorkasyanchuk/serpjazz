@@ -1,0 +1,8 @@
+= f.input :email, :autocorrect => 'off', :autocapitalize => 'off', :autocomplete => 'off'
+= f.input :password
+= f.input :password_confirmation
+= f.input :first_name, :autocomplete => 'off'
+= f.input :last_name, :autocomplete => 'off'
+
+.buttons
+  = f.button :submit, "Sign up"

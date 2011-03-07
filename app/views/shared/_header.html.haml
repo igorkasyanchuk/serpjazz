@@ -1,0 +1,17 @@
+#header
+  %h1#logo
+    = link_to "SERPJazz"
+  %ul#home_nav
+    - if logged_in?
+      %li= link_to 'Dashboard',dashboard_path
+      %li= '|'
+      %li= link_to "Logout", logout_user_session_path
+    - else
+      %li= link_to "Sign up", new_user_path
+      %li= '|'
+      %li= link_to "Login", new_user_session_path
+  #add_this
+    = render :partial => '/shared/add_this'
+  %ul#nav
+    %li= link_to "Home", root_path
+  .clear

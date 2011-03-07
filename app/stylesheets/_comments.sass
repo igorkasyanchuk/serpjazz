@@ -1,0 +1,39 @@
+h2.all_comment
+  margin-top: 18px
+  
+ul.all_comment
+  list-style-type: none
+  margin: 0
+  padding: 0
+  margin-top: 18px
+  li  
+    list-style-type: none
+    padding-top: 0
+    padding-bottom: 6px
+    margin-bottom: 8px
+    border-bottom: 1px dotted $comment_border_color
+    &:last-child
+      border-bottom: 1px solid white
+    .comment_author
+      float: left
+      font-size: $base_font_size - 1px
+      line-height: $base_font_size
+      color: #333
+    .comment_date
+      float: left
+      font-size: $base_font_size - 5px
+      line-height: $base_font_size
+      color: $dark_color
+      padding-top: 2px
+      padding-left: 6px
+    .comment_body
+      float: left
+      width: 100%
+      font-size: $base_font_size - 4px
+      line-height: $base_font_size      
+      margin-top: 2px
+    .comment_actions
+      float: left
+      padding-top: 2px
+      padding-left: 6px    
+      font-size: $base_font_size - 5px

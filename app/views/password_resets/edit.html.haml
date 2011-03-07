@@ -1,0 +1,17 @@
+= title "Change My Password | #{SEO_TITLE_SHORT}"
+= description "Change My Password #{SEO_TITLE_SHORT}"
+
+= no_index_me
+
+.w640px.center_block.top6px.mb24px
+  .block_header
+    %h1 Change My Password
+  .block
+    .block_content
+      %br
+      - simple_form_for @user, :url => password_reset_path, :method => :put do |f|
+        = f.error_messages
+        = f.input :password
+        = f.input :password_confirmation
+        = f.submit "Update my password"
+      %br

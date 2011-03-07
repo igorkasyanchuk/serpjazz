@@ -1,0 +1,51 @@
+!!! XML
+!!!
+
+%html
+  %head
+    == <title>#{(yield :title).blank? ? t("seo.title") : (yield :title)}</title>
+    == <meta content="#{h((yield :description).blank? ? t("seo.description") : (yield :description))}" name="description" />
+    == <meta content="#{h((yield :keywords).blank? ? t("seo.keywords") : (yield :keywords))}" name="keywords" />
+    %meta{ 'http-equiv' => 'imagetoolbar', :content => 'no' }
+    %meta{ :name => 'distribution', :content => 'global' }
+    - if (yield :noindex).blank?
+      %meta{ :name => 'robots', :content => 'all' }
+    - else
+      %meta{ :name => 'robots', :content => 'noindex' }
+    %meta{ :name => 'resource-type', :content => 'document' }
+    %meta{ :name => 'MSSmartTagsPreventParsing', :content => 'true' }
+    <meta name="google-site-verification" content="BRhoTowPgkNXdUFHCVxb91sJvxMT6MlsDRdcPg6iv5M" />
+    <meta content="#{t('seo.language')}" http-equiv="Content-Language" />
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="audience" content="all" />
+    <meta name="revisit-after" content="7 days" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="image_src" href="/logo.jpg" />
+    = csrf_meta_tag
+    = stylesheet_link_tag 'south-street/jquery-ui-1.8.9.custom', 'application', 'colorbox', :cache => 'css'
+    = yield :css
+    = javascript_include_tag 'jquery-1.4.4.min', 'jquery-ui-1.8.8.custom.min', 'jquery.rails', 'jquery.colorbox-min', 'jquery.raty.js', 'jquery.qtip-1.0.0-rc3.min', 'jquery.cookie', 'z', :cache => 'js'
+    = yield :js
+    = yield :map
+    = yield :markitup
+    %script{:type => 'text/javascript', :charset => 'utf-8'}
+      $(document).ready(function() {
+      init_header_autocomplete();
+      = yield :on_ready
+      });
+      = yield :inline_js
+    = include_google_analytics
+    = add_admin_nav
+  %body
+    #root
+      #content
+        .header_container
+          .container= render '/shared/header'
+        .container.body
+          = raw(flash_messages)
+          = yield
+        .clear
+      #root_footer
+    #footer
+      = render :partial => '/shared/footer'

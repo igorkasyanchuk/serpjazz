@@ -1,0 +1,30 @@
+
+fonts - Helvetica Neue (for menu and titles)
+       Arial (for other text)
+____________________________________________
+"A source for research...."- #4d639c, 18px,Helvetica Neue
+"email" - #8e8e8e, 12 px, arial
+"sign up (hover)" - #90b0d2, 12 px, arial bold
+_______________________________________
+висота меню від картинки до сірої полоски - 31 px
+
+Menu links:Helvetica Neue (75 bold)
+font - 
+size - 13 px
+color - #0d084d
+hover color - #4d639c
+_____________________________
+"Who We Are"
+"What We Can Do"
+"Resources"
+"Events" - #4d639c, 15 px, Helvetica Neue (75 bold)
+
+other text - Arial, 13px, #555555
+_________________________
+"21st Century Language Technology You can use"  - Arial (Bold), 13px, #6385a9
+"read more" - arial, 11 px, #4d639c
+"by Paula M. Jones" - Georgia (Italic), 12 px, #90b0d2
+________________________
+Напис на картинці
+box - #4d639c, opacity - 80%
+обводка на картинці або в інших місцях - 1 px, #dcdcdc

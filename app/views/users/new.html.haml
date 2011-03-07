@@ -1,0 +1,12 @@
+= no_index_me
+
+.text_block
+  %h1 Sign up
+  
+  = simple_form_for @user do |f|
+    = f.error_messages
+    = render :partial => 'form', :locals => { :f => f }
+  .clear
+      
+  %p.links.page_links
+    = link_to 'Login', new_user_session_path

@@ -1,0 +1,9 @@
+= no_index_me
+
+.text_block
+  %h1 Contact us
+
+  = simple_form_for @contact do |f|
+    = f.error_messages
+    = render :partial => '/contacts/form', :locals => { :f => f }
+  .clear

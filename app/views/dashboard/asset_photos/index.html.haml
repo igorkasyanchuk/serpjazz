@@ -1,0 +1,21 @@
+= title "Images"
+
+%h1 Images
+
+%table.zebra
+  %tr
+    %th Image
+    %th URL
+  - @asset_photos.each do |photo|
+    %tr
+      %td= link_to (image_tag photo.photo.url(:thumb)), photo.photo.url(:original), :target => '_blank'
+      %td= text_field_tag :link, photo.url, :size => 120, :class => 'copy_and_paste'
+
+.clear
+
+= content_for :on_ready do
+  :plain
+    $(".copy_and_paste").click(function() {
+      $(this).select(); 
+      return true;
+    });

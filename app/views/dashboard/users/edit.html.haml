@@ -1,0 +1,7 @@
+= title "Account Settings"
+
+%h1 Edit Profile
+
+- simple_form_for [:dashboard, @user] do |f|
+  = f.error_messages
+  = render :partial => 'form', :locals => { :f => f }

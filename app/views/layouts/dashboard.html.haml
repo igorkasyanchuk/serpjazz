@@ -1,0 +1,16 @@
+= make_page_flyid
+= disable_social
+
+= inside_layout 'application' do
+  = content_for :on_ready do
+    init_hidden_content();
+  #dashboard
+    .text_block.admin_block
+      %ul#general_nav
+        - if admin?
+          = render :partial => '/admin/shared/header'
+        - else
+          = render :partial => '/dashboard/shared/header'
+      .clear
+    .clear
+    .text_block= yield  
