@@ -1,0 +1,26 @@
+== Update script
+
+git pull igor master
+bundle install
+RAILS_ENV=production rake db:migrate
+rm public/javascripts/application_bundle*
+rm public/javascripts/public_bundle*
+rm public/stylesheets/application_bundle.css
+rm public/stylesheets/public_bundle.css
+chown -R deployer:deployer .
+touch tmp/restart.txt
+free
+
+
+-------
+
+rake friendly_id:make_slugs MODEL=State
+rake friendly_id:make_slugs MODEL=City
+
+
+-------
+
+RAILS_ENV=production rake friendly_id:redo_slugs MODEL=Location
+RAILS_ENV=production rake friendly_id:redo_slugs MODEL=State
+RAILS_ENV=production rake friendly_id:redo_slugs MODEL=City
+
