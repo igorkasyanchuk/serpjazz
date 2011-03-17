@@ -83,3 +83,4 @@ usadvisors/db/*.sqlite3
 usadvisors/db/sphinx/*
 usadvisors/log/development.log
 usadvisors/log/passenger.3000.log
+webrat.log

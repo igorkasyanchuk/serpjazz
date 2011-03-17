@@ -26,6 +26,8 @@ gem 'paperclip', '2.3.6'
 gem 'whenever', :require => false
 gem "sanitize"
 gem "rmagick"
+gem 'nokogiri'
+gem 'mechanize'
 
 group :test do
   gem "shoulda"
