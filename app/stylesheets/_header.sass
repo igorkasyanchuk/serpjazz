@@ -1,107 +1,24 @@
-.header_container
-
 #header
   +grid-container
-  height: 170px
+  height: 80px
   position: relative
   color: $light_text_color
-
-  #logo
-    font-size: $base_font_size * 3
-    padding: 0
-    padding-top: 0px
-    margin: 0
-    margin-top: 5px
-    background: none
   
-  .slogan
-    position: absolute
-    left: 270px
-    top: 75px
-    font-size: $base_font_size + 5px
-    line-height: $base_font_size + 6px
-    font-family: $menu_font
-    color: $light_blue_text_color
-    
-  .details
-    position: absolute
-    top: 5px
-    left: 400px
-    a
-      color: $light_text_color
-
-  ul#home_nav
-    padding: 0
+  ul#base_nav, ul#base_nav li, ul#site_nav, ul#site_nav li
+    list-style-type: none
     margin: 0
+    padding: 0
+    
+  ul#base_nav
     position: absolute
     right: 0
     top: 5px
-    font-size: $base_font_size
-    list-style-type: none
-    color: $light_text_color
     li
-      list-style-type: none
       float: left
-      padding-left: 6px
-      a
-        color: $general_link_color
-        text-decoration: none
-    li.langs
-      padding-left: 75px
-
-  ul#nav
-    padding: 0
-    margin: 0
-    position: absolute
-    left: 0
-    bottom: 0
-    list-style-type: none
-    border-top: 1px solid $border_color
-    border-bottom: 1px solid $border_color
-    width: 100%
-    font-family: $menu_font
-    li
-      list-style-type: none
-      float: left
-      margin-right: 32px
-      padding-top: 8px
-      padding-bottom: 8px
-      &.prelast
-        margin-right: 0
-      &.last
-        float: right
-        margin-right: 0px
-      a
-        font-size: 14px
-        color: $text_color
-        font-family: $menu_font
-        font-weight: bold
-        padding: 0
-        text-transform: uppercase
-        text-decoration: none
-        &:hover, &.selected
-          color: $menu_hover_color
-  #add_this
-    position: absolute
-    right: 0
-    bottom: 59px
-    
-ul#general_nav, ul#admin_nav
-  margin: 0
-  padding: 0
-  color: $light_text_color
-  li
-    font-size: $base_font_size + 2px
-    float: left
-    list-style-type: none
-    margin: 2px 6px 2px 0px
-    padding: 2px 6px
-    &:first-child
-      padding-left: 0
-      margin-left: 0
-    a
-      color: $general_link_color
-    &.selected
-      font-weight: bold
-      a 
-        color: $light_blue_text_color
+      padding: 0 1px
+      margin: 0 1px
+      
+  ul#site_nav
+    float: left   
+    padding: 0 1px
+    margin: 0 1px
