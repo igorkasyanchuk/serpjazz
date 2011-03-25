@@ -2386,6 +2386,12 @@ dd.body img {
   padding: 0 1px;
   margin: 0 1px;
 }
+/* line 49, ../../app/stylesheets/_header.sass */
+#header ul#site_nav li {
+  float: left;
+  padding: 0 1px;
+  margin: 0 1px;
+}
 
 /* line 1, ../../app/stylesheets/_footer.sass */
 #footer {

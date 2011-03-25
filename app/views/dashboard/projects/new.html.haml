@@ -1,0 +1,9 @@
+= title "Add new Project"
+
+%h1.left= "Add new Project"
+.right
+  = link_to 'Back', [:dashboard, current_user, :projects], :class => 'cancel_button'
+  
+= render 'form'
+
+.clear

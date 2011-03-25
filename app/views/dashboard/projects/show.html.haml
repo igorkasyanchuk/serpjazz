@@ -1,0 +1,9 @@
+= title @project.name
+
+%h1.left #{@project.name}
+.right
+  = link_to 'Edit', [:edit, :dashboard, current_user, @project], :class => 'edit_button'
+  |
+  = link_to 'Back', [:dashboard, current_user, :projects], :class => 'index_button'
+
+.clear

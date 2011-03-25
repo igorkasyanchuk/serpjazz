@@ -27,7 +27,9 @@ RailsjazzCom::Application.routes.draw do
     match '/', :to => 'dashboard#welcome'
     resources :asset_photos, :except => [:destroy]
     resources :assets, :except => [:destroy]
-    resources :users, :only => [:edit, :update, :show]
+    resources :users, :only => [:edit, :update, :show] do
+      resources :projects
+    end
   end
 
   root :controller => 'home', :action => 'index'

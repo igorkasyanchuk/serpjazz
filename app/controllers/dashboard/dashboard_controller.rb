@@ -2,7 +2,7 @@ class Dashboard::DashboardController < InheritedResources::Base
   respond_to :html, :xml, :json
   before_filter :require_user
   before_filter :check_user_permissions 
-  layout 'dashboard'
+  layout 'admin'
   
   def welcome
     @user = current_user

@@ -12,5 +12,8 @@
       %li= link_to "Login", new_user_session_path
   .clear
   %ul#site_nav
-    %li= link_to "Home", root_path
+    - if logged_in?
+      = render :partial => admin? ? '/admin/shared/header' : '/dashboard/shared/header'
+    - else
+      %li= link_to "Home", root_path
   .clear

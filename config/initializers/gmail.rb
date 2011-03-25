@@ -9,8 +9,8 @@ ActionMailer::Base.smtp_settings = {
   :enable_starttls_auto => true,  #this is the important shit!
   :address        => 'smtp.gmail.com',
   :port           => 587,
-  :domain         => 'happyhourscout.com',
+  :domain         => '11happyhourscout.com',
   :authentication => :plain,
-  :user_name      => 'noreply@happyhourscout.com',
-  :password       => '55q7_io0'
+  :user_name      => 'noreply@111.com',
+  :password       => 'password'
 }

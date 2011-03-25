@@ -31,9 +31,6 @@ GEM
     activesupport (3.0.4)
     acts-as-taggable-on (2.0.6)
     arel (2.0.7)
-    attribute_normalizer (0.3.1)
-    authlogic (2.1.6)
-      activesupport
     babosa (0.2.0)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
@@ -89,7 +86,7 @@ GEM
     mime-types (1.16)
     mocha (0.9.10)
       rake
-    mysql (2.8.1)
+    mysql2 (0.2.6)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -123,17 +120,12 @@ GEM
     rake (0.8.7)
     redgreen (1.2.2)
     responders (0.6.2)
-    riddle (1.2.2)
     rmagick (2.12.2)
     sanitize (2.0.0)
       nokogiri (~> 1.4.4)
     shoulda (2.11.3)
     simple_form (1.3.0)
       rails (~> 3.0.0)
-    smurf (1.0.4)
-    thinking-sphinx (2.0.2)
-      activerecord (>= 3.0.3)
-      riddle (>= 1.2.2)
     thor (0.14.6)
     timecop (0.3.5)
     tlsmail (0.0.1)
@@ -154,8 +146,6 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
-  attribute_normalizer
-  authlogic
   bcrypt-ruby
   capistrano
   compass (= 0.10.5)
@@ -173,7 +163,7 @@ DEPENDENCIES
   mechanize
   meta_where
   mocha
-  mysql
+  mysql2
   nokogiri
   paperclip (= 2.3.6)
   rails (= 3.0.4)
@@ -183,8 +173,6 @@ DEPENDENCIES
   sanitize
   shoulda
   simple_form
-  smurf
-  thinking-sphinx (~> 2.0.0)
   timecop
   tlsmail
   webrat

@@ -1,0 +1,23 @@
+= title "Projects"
+
+%h1.left= "Projects"
+.add.right
+  = link_to 'Add Project', [:new, :dashboard, current_user, :project], :class => 'add_button'
+.clear
+
+- if @projects.count > 0
+  %table.zebra
+    %thead
+      %tr
+        %th Name
+        %th Actions
+    %tbody
+      - for project in @projects
+        %tr{ :class => cycle(:odd, :even), :id => "cb_row_#{project.id}" }
+          %td= link_to project.name, [:dashboard, current_user, project]
+          %td
+            = link_to 'edit', [:edit, :dashboard, current_user, project], :class => 'edit_button'
+            .hidden= link_to 'delete', [:dashboard, current_user, project], :class => 'delete_button', :method => :delete, :confirm => 'Are you sure?'
+- else
+  %p
+    Empty List.

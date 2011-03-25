@@ -1,9 +1,4 @@
-%ul#admin_nav
-  %li.users_menu= link_to 'Users', admin_users_path
-  %li 
-    |
-  %li.contacts_menu= link_to "Contacts(#{Contact.count})", admin_contacts_path
-.clear
-
-- content_for :on_ready do
-  == $('#admin_nav .#{controller_name}_menu').addClass('selected');
+= render :partial => '/dashboard/shared/header'
+%li= link_to 'Users', admin_users_path
+%li= '|'
+%li= link_to "Contacts(#{Contact.count})", admin_contacts_path

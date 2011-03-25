@@ -1,6 +1,4 @@
-%ul#general_nav
-  %li.users_menu= link_to "Account Settings", edit_dashboard_user_path(current_user)
-.clear
-
-- content_for :on_ready do
-  == $('#general_nav .#{controller_name}_menu').addClass('selected');
+%li= link_to "Account Settings", edit_dashboard_user_path(current_user)
+%li= '|'
+%li= link_to "Projects", [:dashboard, current_user, :projects]
+%li= '|'

@@ -3,10 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.4'
 
 gem 'capistrano'
-gem 'mysql'
+gem 'mysql2'
 gem 'dynamic_form'
-gem 'attribute_normalizer'
-gem 'authlogic'
 gem 'haml-rails'
 gem "will_paginate", "~> 3.0.pre2"
 gem 'inherited_resources', '1.1.2'
@@ -20,7 +18,6 @@ gem "friendly_id", "~> 3.1"
 gem 'bcrypt-ruby', :require => 'bcrypt' 
 gem 'tlsmail'
 gem 'hoptoad_notifier'
-gem 'thinking-sphinx', "~> 2.0.0", :require => 'thinking_sphinx'
 gem 'meta_where'
 gem 'paperclip', '2.3.6'
 gem 'whenever', :require => false
@@ -45,5 +42,4 @@ group :development, :test do
 end
 
 group :production do
-  gem 'smurf'
 end
